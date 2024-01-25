@@ -29,24 +29,6 @@ const UserProfile = ({ userData }) => {
         });
     };
 
-    const storeImageInObjectStore = async (blob) => {
-        const db = await idbManager.openDB();
-        const transaction = db.transaction(["imageObjectStore"], "readwrite");
-        const imageStore = transaction.objectStore("imageObjectStore");
-        const result = imageStore.add(blob);
-
-        result.onsuccess = () => {
-            console.log("Image stored successfully");
-            idbManager.closeDB(db);
-        };
-
-        result.onerror = (event) => {
-            console.log("Error storing image:", event.error);
-            idbManager.closeDB(db);
-        };
-    };
-
-
     console.log(`UserProfileComponent`, userData)
     return (
         <div className="container mt-4">

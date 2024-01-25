@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css';
 import HeaderComponent from './components/HeaderComponent';
 import MainNav from './components/MainNav';
@@ -15,7 +15,7 @@ import InactivityWarning from './components/InactivityWarning';
 import ProfilePage from './components/ProfilePage';
 
 function App() {
-    const [userData, setUserData] = useState({
+    const userData ={
         firstName: '',
         lastName: '',
         email: '',
@@ -23,11 +23,9 @@ function App() {
         gender: '',
         password: '',
         profileImage: ''
-    });
-
+    };
 
     const [showLoginModal, setShowLoginModal] = useState(false);
-    const [items, setItems] = useState([]);
 
     const openLoginModal = () => {
         setShowLoginModal(true);

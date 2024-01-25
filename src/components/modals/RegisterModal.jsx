@@ -108,7 +108,8 @@ const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, us
                     handleInvalidField(target);
                 }
                 break;
-            // Add cases for other fields as needed
+            default:
+              console.log("Invalid field")
         }
     };
 

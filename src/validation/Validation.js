@@ -3,7 +3,7 @@
 class Validation {
     __nameRegex = /^[a-zA-Z'-]+$/;
     __emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    __phoneRegex = /^(\+\d{1,})?(\d{3}[-\.\s]??\d{3}[-\.\s]??\d{4})$/;
+    __phoneRegex = /^(\+\d{1,})?(\d{3}[-.\s]??\d{3}[-.\s]??\d{4})$/;
     __usernameRegex = /^[a-zA-Z0-9_]{3,}$/;
     __passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d!@#$%^&*()_+]{8,}$/;
     __dateRegex = /^\d{4}-\d{2}-\d{2}$/;
@@ -44,4 +44,4 @@ class Validation {
 }
 
 
-export const validation = new Validation
+export const validation = new Validation()

@@ -1,18 +1,17 @@
-import "../css/Header.css";
-import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom'
-
+import '../css/Header.css'
+import { Link } from 'react-router-dom'
 
 export const HeaderComponent = ({ openLoginModal, userData }) => {
 
+/*
   const searchItems = (input, itemList) => {
     // Convert the input and each item in the list to lowercase for case-insensitive comparison
     const lowercasedInput = input.toLowerCase();
 
     // Use filter to find items that contain the input string
-    const matchingItems = itemList.filter(item => item.toLowerCase().includes(lowercasedInput));
-
-    return matchingItems;
+    return itemList.filter(item => item.toLowerCase().includes(lowercasedInput));
   }
+*/
 
     const handleUserIconClick = () => {
         const isUserDataEmpty = Object.values(userData).every(value => value === '');

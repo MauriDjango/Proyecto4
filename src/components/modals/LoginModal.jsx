@@ -4,14 +4,6 @@ import React, { useState } from 'react';
 const LoginModal = ({ setLoginInfo, closeLoginModal, showLoginModal, openRegisterModal }) => {
   const [loginData, setLoginData] = useState({ email: '', password: '' });
 
-  const handleLoginChange = (e) => {
-    const { name, value } = e.target;
-    setLoginData({
-      ...loginData,
-      [name]: value,
-    });
-  };
-
   const handleLoginSubmit = (e) => {
     e.preventDefault();
     setLoginInfo(loginData);

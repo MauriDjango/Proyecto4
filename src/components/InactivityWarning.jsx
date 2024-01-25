@@ -1,20 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const InactivityWarning = () => {
-    const [isInactive, setIsInactive] = useState(false);
 
     let inactivityTimer;
 
     const resetTimer = () => {
         clearTimeout(inactivityTimer);
         inactivityTimer = setTimeout(() => {
-            setIsInactive(true);
             alert('Your session is inactive. Please interact to continue.');
         }, 1 * 1000); // 6 seconds for testing purposes
     };
 
     const handleInteraction = () => {
-        setIsInactive(false);
         resetTimer();
     };
 
