@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 const InactivityWarning = () => {
 
@@ -29,7 +29,7 @@ const InactivityWarning = () => {
             document.removeEventListener('keydown', handleInteraction);
             clearTimeout(inactivityTimer);
         };
-    }, []);
+    }, [handleInteraction, inactivityTimer, resetTimer]);
 
     // Use another useEffect to reset the timer periodically
     useEffect(() => {
@@ -39,7 +39,7 @@ const InactivityWarning = () => {
 
         // Cleanup
         return () => clearInterval(timerInterval);
-    }, []);
+    }, [resetTimer]);
 
     return null; // Since we are using an alert, there is no need for a visible component
 };

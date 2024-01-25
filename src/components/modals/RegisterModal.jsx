@@ -182,7 +182,7 @@ const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, us
         })
       });
     }
-  }, [formData]);
+  }, [formData, formInputHandler, inputRefs, registerUser, toggleSubmit]);
 
   return (
     <>
@@ -233,11 +233,11 @@ const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, us
                       By creating an account, you agree to our{" "}
                     </div>
                     <div className="terms-of-service">
-                      <a href="#">Terms of Service</a>
+                      <a>Terms of Service</a>
                     </div>
                     <div className="and">and </div>
                     <div className="privacy-policy">
-                      <a href="#">Privacy Policy</a>
+                      <a>Privacy Policy</a>
                     </div>
                     <div className="input-field">
                         <input type="checkbox" id="agreeTerms" className="form-check-input" />

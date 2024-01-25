@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { userObjectStore } from '../services/db/UserObjectStore'
-import { idbManager } from '../services/db/IndexedDatabaseManager'
+
 
 const UserProfile = ({ userData }) => {
     const [profileImage, setProfileImage] = useState(null);

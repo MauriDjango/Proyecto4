@@ -2,16 +2,13 @@ import React, { useState } from 'react';
 
 
 const LoginModal = ({ setLoginInfo, closeLoginModal, showLoginModal, openRegisterModal }) => {
-  const [loginData, setLoginData] = useState({ email: '', password: '' });
+  const loginData = { email: '', password: '' };
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
     setLoginInfo(loginData);
     closeLoginModal();
   };
-
-  console.log("LoginModalComponent, ", showLoginModal
-  )
 
   return (
     <>
