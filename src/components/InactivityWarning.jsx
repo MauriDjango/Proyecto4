@@ -1,19 +1,20 @@
-import { useEffect } from 'react';
+import { useCallback, useEffect } from 'react'
 
-const InactivityWarning = () => {
+const InactivityWarning = (callback, deps) => {
 
     let inactivityTimer;
 
-    const resetTimer = () => {
+    const resetTimer = useCallback(() => {
+
         clearTimeout(inactivityTimer);
         inactivityTimer = setTimeout(() => {
             alert('Your session is inactive. Please interact to continue.');
         }, 1 * 1000); // 6 seconds for testing purposes
-    };
+    }, [])
 
-    const handleInteraction = () => {
+    const handleInteraction = useCallback (() => {
         resetTimer();
-    };
+    }, [resetTimer]);
 
     useEffect(() => {
         // Initial setup

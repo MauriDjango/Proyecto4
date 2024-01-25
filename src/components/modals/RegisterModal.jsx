@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { validation } from '../../validation/Validation';
 
 const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, userData }) => {
@@ -45,7 +45,7 @@ const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, us
     formData[target.id] = null;
   };
 
-    const formInputHandler = (formData, target) => {
+    const formInputHandler = useCallback((formData, target) => {
         const fieldValue = target.type === "checkbox" ? target.checked : target.value;
         const fieldId = target.id;
 
@@ -111,13 +111,13 @@ const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, us
             default:
               console.log("Invalid field")
         }
-    };
+    }, []);
 
 
   const enabledClass = 'btn btn-primary w-full mt-5 p-2 text-white uppercase font-bold';
   const disabledClass = 'btn btn-secondary w-full mt-5 p-2 text-white uppercase font-bold';
 
-  const toggleSubmit = (submitButton) => {
+  const toggleSubmit = useCallback((submitButton) => {
     if (validation.validForm(formData)) {
       submitButton.removeAttribute('disabled');
       submitButton.setAttribute('class', enabledClass);
@@ -125,9 +125,9 @@ const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, us
       submitButton.setAttribute('disabled', true);
       submitButton.setAttribute('class', disabledClass);
     }
-  };
+  }, []);
 
-  const inputRefs = {
+  const inputRefs = useMemo({
     firstName: useRef(null),
     lastName: useRef(null),
     email: useRef(null),
@@ -137,7 +137,7 @@ const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, us
     maleGender: useRef(null),
     femaleGender: useRef(null),
     agreeTerms: useRef(null)
-  };
+  }, []);
 
   useEffect(() => {
     const submitButton = document.getElementById('create-account_button');
@@ -233,11 +233,11 @@ const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, us
                       By creating an account, you agree to our{" "}
                     </div>
                     <div className="terms-of-service">
-                      <a>Terms of Service</a>
+                      <p>Terms of Service</p>
                     </div>
                     <div className="and">and </div>
                     <div className="privacy-policy">
-                      <a>Privacy Policy</a>
+                      <p>Privacy Policy</p>
                     </div>
                     <div className="input-field">
                         <input type="checkbox" id="agreeTerms" className="form-check-input" />

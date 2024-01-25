@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 const LoginModal = ({ setLoginInfo, closeLoginModal, showLoginModal, openRegisterModal }) => {
