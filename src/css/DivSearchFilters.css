@@ -1,0 +1,406 @@
+.div-search-filters,
+.div-search-filters * {
+  box-sizing: border-box;
+}
+.div-search-filters {
+  background: #ffffff;
+  width: 1920px;
+  height: 98px;
+  position: relative;
+}
+.tsl-filters-wrapper {
+  background: #ffffff;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 38px;
+  top: 0px;
+  overflow: hidden;
+}
+.tsl-bubble {
+  background: #ffffff;
+  border-radius: 21px;
+  height: 36px;
+  position: absolute;
+  right: 1790.23px;
+  left: 20px;
+  top: 12px;
+  box-shadow: 0px 1px 4px 0px rgba(37, 50, 56, 0.1);
+}
+.div-bubble-content-wrapper {
+  width: 77.77px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 38.88px);
+  top: calc(50% - 12px);
+  overflow: hidden;
+}
+.div-bubble-content {
+  width: 45.77px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 22.88px);
+  top: calc(50% - 12px);
+  overflow: hidden;
+}
+.filtros {
+  color: #212529;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.75px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  width: 45.97px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tsl-filter-group {
+  height: 44px;
+  position: absolute;
+  right: 635.92px;
+  left: 133.77000427246094px;
+  top: 8px;
+}
+.tsl-filter-host-tsl-categories-filter-tsl-filter-template-tsl-bubble {
+  background: #ffffff;
+  border-radius: 21px;
+  height: 36px;
+  position: absolute;
+  right: 899.87px;
+  left: 4px;
+  top: 4px;
+  box-shadow: 0px 1px 4px 0px rgba(37, 50, 56, 0.1);
+}
+.tsl-svg-icon-svg {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: calc(50% - 107.22px);
+  top: calc(50% - 9px);
+  overflow: visible;
+}
+.div-bubble-content-wrapper2 {
+  width: 186.44px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 89.22px);
+  top: calc(50% - 12px);
+  overflow: hidden;
+}
+.div-bubble-content2 {
+  width: 154.44px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 77.22px);
+  top: calc(50% - 12px);
+  overflow: hidden;
+}
+.herramientas {
+  color: #212529;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15.875px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  width: 154.64px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tsl-svg-icon-svg2 {
+  opacity: 0.4000000059604645;
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  left: calc(50% - -97.21px);
+  top: calc(50% - 3px);
+  overflow: visible;
+}
+.tsl-filter-host-tsl-toggle-filter-tsl-filter-template-tsl-bubble {
+  background: #ffffff;
+  border-radius: 21px;
+  height: 36px;
+  position: absolute;
+  right: 682.58px;
+  left: 258.42999267578125px;
+  top: 4px;
+  box-shadow: 0px 1px 4px 0px rgba(37, 50, 56, 0.1);
+}
+.tsl-svg-icon-svg3 {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: calc(50% - 88.65px);
+  top: calc(50% - 9px);
+  overflow: visible;
+}
+.div-bubble-content-wrapper3 {
+  width: 159.3px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 70.65px);
+  top: calc(50% - 12px);
+  overflow: hidden;
+}
+.div-bubble-content3 {
+  width: 127.3px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 63.65px);
+  top: calc(50% - 12px);
+  overflow: hidden;
+}
+.env-o-disponible {
+  color: #212529;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  width: 127.5px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tsl-filter-host-tsl-location-filter-tsl-filter-template-tsl-bubble {
+  background: #ffffff;
+  border-radius: 21px;
+  height: 36px;
+  position: absolute;
+  right: 407.64px;
+  left: 475.7300109863281px;
+  top: 4px;
+  box-shadow: 0px 1px 4px 0px rgba(37, 50, 56, 0.1);
+}
+.tsl-svg-icon-svg4 {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: calc(50% - 117.47px);
+  top: calc(50% - 9px);
+  overflow: visible;
+}
+.div-bubble-content-wrapper4 {
+  width: 206.94px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 99.47px);
+  top: calc(50% - 12px);
+  overflow: hidden;
+}
+.div-bubble-content4 {
+  width: 174.94px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 87.47px);
+  top: calc(50% - 12px);
+  overflow: hidden;
+}
+.c-diz-plaza-del-arenal {
+  color: #212529;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  width: 175.14px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tsl-svg-icon-svg5 {
+  opacity: 0.4000000059604645;
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  left: calc(50% - -107.47px);
+  top: calc(50% - 3px);
+  overflow: visible;
+}
+.tsl-filter-host-tsl-range-filter-tsl-filter-template-tsl-bubble {
+  background: #ffffff;
+  border-radius: 21px;
+  height: 36px;
+  position: absolute;
+  right: 259.72px;
+  left: 750.6699829101562px;
+  top: 4px;
+  box-shadow: 0px 1px 4px 0px rgba(37, 50, 56, 0.1);
+}
+.tsl-svg-icon-svg6 {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: calc(50% - 53.96px);
+  top: calc(50% - 9px);
+  overflow: visible;
+}
+.div-bubble-content-wrapper5 {
+  width: 79.92px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 35.96px);
+  top: calc(50% - 12px);
+  overflow: hidden;
+}
+.div-bubble-content5 {
+  width: 47.92px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 23.96px);
+  top: calc(50% - 12px);
+  overflow: hidden;
+}
+.precio {
+  color: #212529;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  width: 48.12px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tsl-svg-icon-svg7 {
+  opacity: 0.4000000059604645;
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  left: calc(50% - -43.96px);
+  top: calc(50% - 3px);
+  overflow: visible;
+}
+.tsl-filter-host-tsl-multi-select-filter-tsl-filter-template-tsl-bubble {
+  background: #ffffff;
+  border-radius: 21px;
+  height: 36px;
+  position: absolute;
+  right: 4px;
+  left: 898.5900268554688px;
+  top: 4px;
+  box-shadow: 0px 1px 4px 0px rgba(37, 50, 56, 0.1);
+}
+.tsl-svg-icon-svg8 {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: calc(50% - 107.86px);
+  top: calc(50% - 9px);
+  overflow: visible;
+}
+.div-bubble-content-wrapper6 {
+  width: 187.72px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 89.86px);
+  top: calc(50% - 12px);
+  overflow: hidden;
+}
+.div-bubble-content6 {
+  width: 155.72px;
+  height: 24px;
+  position: absolute;
+  left: calc(50% - 77.86px);
+  top: calc(50% - 12px);
+  overflow: hidden;
+}
+.estado-del-producto {
+  color: #212529;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  width: 155.92px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tsl-svg-icon-svg9 {
+  opacity: 0.4000000059604645;
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  left: calc(50% - -97.86px);
+  top: calc(50% - 3px);
+  overflow: visible;
+}
+.tsl-sort-filter {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #d8dbdd;
+  border-width: 0px 0px 1px 0px;
+  height: 38px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 60px;
+}
+.tsl-svg-icon-svg10 {
+  width: 28px;
+  height: auto;
+  position: absolute;
+  left: 20px;
+  bottom: 5.5px;
+  top: 4.5px;
+  overflow: visible;
+}
+.ordenar-por {
+  color: #212529;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  position: absolute;
+  left: 48px;
+  top: 9.5px;
+  width: 74.64px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.relevancia {
+  color: #ffa62e;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  position: absolute;
+  left: 126.44px;
+  top: 9.5px;
+  width: 62.15px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
