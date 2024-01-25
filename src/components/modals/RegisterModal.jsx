@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { validation } from '../../validation/Validation';
 
 const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, userData }) => {
