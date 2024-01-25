@@ -111,7 +111,7 @@ const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, us
             default:
               console.log("Invalid field")
         }
-    }, []);
+    }, [handleInvalidField, handleValidField]);
 
 
   const enabledClass = 'btn btn-primary w-full mt-5 p-2 text-white uppercase font-bold';
@@ -125,7 +125,7 @@ const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, us
       submitButton.setAttribute('disabled', true);
       submitButton.setAttribute('class', disabledClass);
     }
-  }, []);
+  }, [formData]);
 
   const inputRefs = useMemo({
     firstName: useRef(null),
@@ -137,7 +137,7 @@ const RegisterModal = ({ registerUser, closeRegisterModal, showRegisterModal, us
     maleGender: useRef(null),
     femaleGender: useRef(null),
     agreeTerms: useRef(null)
-  }, []);
+  }, [useRef]);
 
   useEffect(() => {
     const submitButton = document.getElementById('create-account_button');

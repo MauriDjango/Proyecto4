@@ -1,13 +1,13 @@
-import { useCallback, useEffect } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 
 const InactivityWarning = (callback, deps) => {
 
-    let inactivityTimer;
+    let inactivityTimer = useRef(null);
 
     const resetTimer = useCallback(() => {
 
-        clearTimeout(inactivityTimer);
-        inactivityTimer = setTimeout(() => {
+        clearTimeout(inactivityTimer.current);
+        inactivityTimer.current = setTimeout(() => {
             alert('Your session is inactive. Please interact to continue.');
         }, 1 * 1000); // 6 seconds for testing purposes
     }, [])
@@ -28,7 +28,7 @@ const InactivityWarning = (callback, deps) => {
         return () => {
             document.removeEventListener('mousemove', handleInteraction);
             document.removeEventListener('keydown', handleInteraction);
-            clearTimeout(inactivityTimer);
+            clearTimeout(inactivityTimer.current);
         };
     }, [handleInteraction, inactivityTimer, resetTimer]);
 
